@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TestParser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cats\Corecat\Concurrent\Event.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Concurrent\Promise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Concurrent\ThreadPoolExecutor.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Allocator\FastAllocator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\DataView\MemoryDataView.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Stream\BufferedOutputStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Stream\CastInputStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Stream\CastOutputStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Stream\DataViewInputStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Stream\DataViewOutputStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Stream\InputStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Stream\OutputStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Stream\WrapperInputStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Stream\WrapperOutputStream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Array.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\DataView.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Digest.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data\Stream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\System\Compiler.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\System\Environment.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\System\OS.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\System\Process.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\System\SharedLibrary.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Text\Charset\DefaultCharset.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Text\Charset\UTF8Charset.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Text\Charset\UTF16Charset.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Text\Charset\UTF32Charset.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Text\Charset\WideCharset.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Text\Formatter.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Text\String.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Range\ForEach.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Range\IotaRange.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Range\RangeOperator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Range\RangeTraits.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Range\RangeView.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Range\Reduce.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Range\ReverseRange.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Range\SkipRange.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Range\TakeRange.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Range\Transduce.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Range\TransformRange.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Benchmark.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Byte.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\CommandLine.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Detector.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Endian.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Exception.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\ExceptionPtr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Function.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Iterator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Operator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Range.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\Sequence.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util\VoidType.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Win32\Windows.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Data.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\System.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Text.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Time.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Util.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\Win32.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cats\Corecat\X86.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

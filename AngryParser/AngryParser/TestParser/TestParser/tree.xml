@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="gb2312"?>
+<?tree pi?>
+<mesh name="mesh_root">
+	<!-- here is a mesh node -->
+	some text
+	<![CDATA[someothertext]]>
+	some more  &#39; &#x27; &apos; text
+	<node attr1="value1" attr2="v"/>
+	<node attr1="value2" attr2="v2">
+		<innernode/>
+	</node>
+</mesh>

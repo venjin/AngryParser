@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{32283833-74A4-4129-A110-F97FD7023071}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TestParser</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>../../AngryParser;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>../../AngryParser;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>AngryParser.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="TestParser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cats\Corecat\Concurrent\Event.hpp" />
+    <ClInclude Include="Cats\Corecat\Concurrent\Promise.hpp" />
+    <ClInclude Include="Cats\Corecat\Concurrent\ThreadPoolExecutor.hpp" />
+    <ClInclude Include="Cats\Corecat\Data.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Allocator\FastAllocator.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Array.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\DataView.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\DataView\MemoryDataView.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Digest.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Stream.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Stream\BufferedOutputStream.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Stream\CastInputStream.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Stream\CastOutputStream.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Stream\DataViewInputStream.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Stream\DataViewOutputStream.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Stream\InputStream.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Stream\OutputStream.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Stream\WrapperInputStream.hpp" />
+    <ClInclude Include="Cats\Corecat\Data\Stream\WrapperOutputStream.hpp" />
+    <ClInclude Include="Cats\Corecat\System.hpp" />
+    <ClInclude Include="Cats\Corecat\System\Compiler.hpp" />
+    <ClInclude Include="Cats\Corecat\System\Environment.hpp" />
+    <ClInclude Include="Cats\Corecat\System\OS.hpp" />
+    <ClInclude Include="Cats\Corecat\System\Process.hpp" />
+    <ClInclude Include="Cats\Corecat\System\SharedLibrary.hpp" />
+    <ClInclude Include="Cats\Corecat\Text.hpp" />
+    <ClInclude Include="Cats\Corecat\Text\Charset\DefaultCharset.hpp" />
+    <ClInclude Include="Cats\Corecat\Text\Charset\UTF16Charset.hpp" />
+    <ClInclude Include="Cats\Corecat\Text\Charset\UTF32Charset.hpp" />
+    <ClInclude Include="Cats\Corecat\Text\Charset\UTF8Charset.hpp" />
+    <ClInclude Include="Cats\Corecat\Text\Charset\WideCharset.hpp" />
+    <ClInclude Include="Cats\Corecat\Text\Formatter.hpp" />
+    <ClInclude Include="Cats\Corecat\Text\String.hpp" />
+    <ClInclude Include="Cats\Corecat\Time.hpp" />
+    <ClInclude Include="Cats\Corecat\Util.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Benchmark.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Byte.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\CommandLine.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Detector.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Endian.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Exception.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\ExceptionPtr.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Function.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Iterator.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Operator.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Range.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Range\ForEach.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Range\IotaRange.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Range\RangeOperator.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Range\RangeTraits.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Range\RangeView.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Range\Reduce.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Range\ReverseRange.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Range\SkipRange.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Range\TakeRange.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Range\Transduce.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Range\TransformRange.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\Sequence.hpp" />
+    <ClInclude Include="Cats\Corecat\Util\VoidType.hpp" />
+    <ClInclude Include="Cats\Corecat\Win32.hpp" />
+    <ClInclude Include="Cats\Corecat\Win32\Windows.hpp" />
+    <ClInclude Include="Cats\Corecat\X86.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
