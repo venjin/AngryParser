@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestParser", "TestParser\TestParser\TestParser.vcxproj", "{32283833-74A4-4129-A110-F97FD7023071}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2F0016E1-4B51-4738-912F-ED25BD8A5AD0} = {2F0016E1-4B51-4738-912F-ED25BD8A5AD0}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AngryParser", "AngryParser\AngryParser.vcxproj", "{2F0016E1-4B51-4738-912F-ED25BD8A5AD0}"
 EndProject
