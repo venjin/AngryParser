@@ -151,13 +151,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Core\allocator.cpp" />
     <ClCompile Include="Core\exception.cpp" />
     <ClCompile Include="Core\string.cpp" />
-    <ClCompile Include="XML\documen.cpp" />
+    <ClCompile Include="XML\document.cpp" />
     <ClCompile Include="XML\handler.cpp" />
     <ClCompile Include="XML\parser.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core\allocator.h" />
     <ClInclude Include="Core\compilerdetection.h" />
     <ClInclude Include="Core\exception.h" />
     <ClInclude Include="Core\string.h" />

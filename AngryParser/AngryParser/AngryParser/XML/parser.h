@@ -985,7 +985,6 @@ public:
     template <Flag F = Flag::Default, typename H>
     void parse(char *data, H &handler)
     {
-
         assert(data);
 
         s = data;

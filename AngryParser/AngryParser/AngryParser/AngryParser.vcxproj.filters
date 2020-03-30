@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="XML\documen.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="XML\handler.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -28,6 +25,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Core\string.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\allocator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="XML\document.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -48,6 +51,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Core\string.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\allocator.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
